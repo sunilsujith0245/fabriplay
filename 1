@@ -3,124 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Boutique Business Model Masterclass</title>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<title>Tailoring Boutique Masterclass</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-/* ============================================
-   ADMIN: EDIT COLORS & DETAILS HERE
-   ============================================ */
 :root {
-  --white: #FFFFFF;
-  --off-white: #FAFAFA;
-  --light-grey: #F3F3F3;
-  --soft-grey: #E5E5E5;
-  --border-grey: #979797;
-  --black: #000000;
-  --charcoal: #1A1A1A;
-  --dark-text: #111111;
-  --body-text: #2D2D2D;
-  --muted: #4A4A4A;
-  --primary-purple: #7F00FF;
-  --light-purple: #B266FF;
-  --purple-hover: #5E00CC;
-  --deep-purple: #3D0080;
-  --yellow-accent: #FFD600;
-  --yellow-dark: #D4B200;
-  --purple-bg: rgba(127,0,255,0.05);
-  --purple-bg2: rgba(127,0,255,0.08);
+  --white: #FFFFFF; --off-white: #FAFAFA; --light-grey: #F3F3F3;
+  --soft-grey: #E5E5E5; --border-grey: #979797; --black: #000000;
+  --charcoal: #1A1A1A; --dark-text: #111111; --body-text: #2D2D2D;
+  --muted: #4A4A4A; --primary-purple: #7F00FF; --light-purple: #B266FF;
+  --purple-hover: #5E00CC; --deep-purple: #3D0080;
+  --yellow-accent: #FFD600; --yellow-dark: #D4B200;
+  --purple-bg: rgba(127,0,255,0.05); --purple-bg2: rgba(127,0,255,0.08);
 }
-
-/* ============================================
-   RESET
-   ============================================ */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{
-  font-family:'DM Sans',sans-serif;
-  color:var(--dark-text);
-  background:var(--white);
-  overflow-x:hidden;
-  line-height:1.65;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:hidden;width:100%}
+body{font-family:'Inter',sans-serif;color:var(--dark-text);background:var(--white);overflow-x:hidden;width:100%;position:relative;line-height:1.6;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;letter-spacing:-0.01em}
 img{max-width:100%;display:block}
 a{text-decoration:none;color:inherit}
 button{font-family:inherit}
 
-/* ============================================
-   LAYOUT
-   ============================================ */
-.container{max-width:1060px;margin:0 auto;padding:0 20px}
+.container{max-width:1200px;margin:0 auto;padding:0 28px;width:100%}
+.section-tag{display:inline-block;font-family:'Inter',sans-serif;font-size:11px;font-weight:700;color:var(--primary-purple);background:var(--purple-bg2);padding:6px 14px;border-radius:100px;margin-bottom:14px;text-transform:uppercase;letter-spacing:1.2px}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(26px,3.8vw,42px);font-weight:700;color:var(--dark-text);line-height:1.15;margin-bottom:10px;letter-spacing:-0.02em}
+.section-sub{font-family:'Inter',sans-serif;font-size:16px;color:var(--body-text);line-height:1.65;margin-bottom:28px;max-width:580px;font-weight:400}
 
-.section-tag{
-  display:inline-block;
-  font-family:'Space Grotesk',sans-serif;
-  font-size:12px;font-weight:700;
-  color:var(--primary-purple);
-  background:var(--purple-bg2);
-  padding:5px 14px;border-radius:100px;
-  margin-bottom:14px;
-  text-transform:uppercase;letter-spacing:0.8px;
-}
-.section-title{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:clamp(24px,3.8vw,38px);
-  font-weight:800;color:var(--dark-text);
-  line-height:1.18;margin-bottom:10px;
-}
-.section-sub{
-  font-size:16px;color:var(--body-text);
-  line-height:1.65;margin-bottom:32px;
-  max-width:560px;
-}
-
-/* ============================================
-   CTA BUTTONS
-   ============================================ */
-.cta-btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:8px;
-  font-family:'Space Grotesk',sans-serif;
-  font-size:16px;font-weight:700;
-  padding:15px 32px;border:none;border-radius:10px;
-  cursor:pointer;position:relative;
-  transition:all .25s ease;
-}
-.cta-btn--purple{
-  background:var(--primary-purple);color:var(--white);
-  box-shadow:0 4px 20px rgba(127,0,255,.3);
-  animation:glow-p 2.5s infinite;
-}
+.cta-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;padding:15px 30px;border:none;border-radius:8px;cursor:pointer;position:relative;transition:all .25s ease;letter-spacing:-0.01em}
+.cta-btn--purple{background:var(--primary-purple);color:var(--white);box-shadow:0 4px 20px rgba(127,0,255,.3);animation:glow-p 2.5s infinite}
 .cta-btn--purple:hover{background:var(--purple-hover);transform:translateY(-2px);box-shadow:0 8px 30px rgba(127,0,255,.4)}
 @keyframes glow-p{0%,100%{box-shadow:0 4px 20px rgba(127,0,255,.3)}50%{box-shadow:0 4px 32px rgba(127,0,255,.5)}}
-
-.cta-btn--yellow{
-  background:var(--yellow-accent);color:var(--black);
-  box-shadow:0 4px 20px rgba(255,214,0,.35);
-  animation:glow-y 2.5s infinite;
-}
+.cta-btn--yellow{background:var(--yellow-accent);color:var(--black);box-shadow:0 4px 20px rgba(255,214,0,.35);animation:glow-y 2.5s infinite}
 .cta-btn--yellow:hover{background:var(--yellow-dark);transform:translateY(-2px);box-shadow:0 8px 30px rgba(255,214,0,.45)}
 @keyframes glow-y{0%,100%{box-shadow:0 4px 20px rgba(255,214,0,.35)}50%{box-shadow:0 4px 32px rgba(255,214,0,.55)}}
-
-.cta-btn--outline{
-  background:transparent;color:var(--white);
-  border:2px solid rgba(255,255,255,.3);
-  box-shadow:none;animation:none;
-}
-.cta-btn--outline:hover{border-color:var(--white);background:rgba(255,255,255,.08)}
-
 .cta-btn .arrow{display:inline-block;transition:transform .25s}
 .cta-btn:hover .arrow{transform:translateX(4px)}
-
 .cta-group{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
-.cta-note{font-size:12px;color:var(--muted);margin-top:8px}
+.cta-note{font-size:12px;color:var(--muted);margin-top:8px;font-weight:500}
 .cta-note b{color:var(--primary-purple)}
-.cta-note--light{color:rgba(255,255,255,.45)}
+.cta-note--light{color:rgba(255,255,255,.5)}
 .cta-note--light b{color:var(--yellow-accent)}
 
-/* ============================================
-   SCROLL ANIMATIONS
-   ============================================ */
 .rv{opacity:0;transform:translateY(28px);transition:opacity .55s ease,transform .55s ease}
 .rv.v{opacity:1;transform:translateY(0)}
 .rv-l{opacity:0;transform:translateX(-35px);transition:opacity .55s ease,transform .55s ease}
@@ -128,155 +49,59 @@ button{font-family:inherit}
 .rv-r{opacity:0;transform:translateX(35px);transition:opacity .55s ease,transform .55s ease}
 .rv-r.v{opacity:1;transform:translateX(0)}
 
-/* ============================================
-   SECTION 1: HERO
-   ============================================ */
-.hero{
-  background:linear-gradient(150deg,#080012 0%,#140028 35%,var(--charcoal) 100%);
-  position:relative;overflow:hidden;
-  padding:56px 0 48px;
-}
-.hero::before{
-  content:'';position:absolute;
-  top:-180px;right:-180px;width:460px;height:460px;
-  background:radial-gradient(circle,rgba(127,0,255,.16) 0%,transparent 70%);
-  pointer-events:none;
-}
+/* HERO */
+.hero{background:linear-gradient(150deg,#080012 0%,#140028 35%,var(--charcoal) 100%);position:relative;overflow:hidden;min-height:100vh;padding:24px 0;display:flex;align-items:center;width:100%}
+.hero::before{content:'';position:absolute;top:-180px;right:-100px;width:360px;height:360px;background:radial-gradient(circle,rgba(127,0,255,.16) 0%,transparent 70%);pointer-events:none;max-width:100%}
 .hero-particles{position:absolute;inset:0;pointer-events:none}
-.dot{
-  position:absolute;width:5px;height:5px;
-  background:var(--primary-purple);border-radius:50%;
-  opacity:.2;animation:dotf 7s ease-in-out infinite;
-}
+.dot{position:absolute;width:5px;height:5px;background:var(--primary-purple);border-radius:50%;opacity:.2;animation:dotf 7s ease-in-out infinite}
 .dot:nth-child(1){top:12%;left:6%;animation-delay:0s}
 .dot:nth-child(2){top:50%;left:88%;animation-delay:1.5s;width:3px;height:3px}
 .dot:nth-child(3){top:78%;left:22%;animation-delay:3s;width:6px;height:6px}
 .dot:nth-child(4){top:6%;left:62%;animation-delay:.7s}
 @keyframes dotf{0%,100%{transform:translateY(0);opacity:.2}50%{transform:translateY(-20px);opacity:.45}}
-
 .hero-grid{
-  position:relative;z-index:2;
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:40px;align-items:center;
+  position:relative;z-index:2;width:100%;max-width:100%;
+  display:grid;grid-template-columns:1fr 1.15fr;
+  gap:32px;align-items:center;
 }
-
-/* --- Hero left --- */
 .hero-left{display:flex;flex-direction:column}
-
-.pre-hl{
-  display:inline-flex;align-self:flex-start;
-  font-family:'Space Grotesk',sans-serif;
-  font-size:12px;font-weight:700;
-  color:var(--yellow-accent);
-  background:rgba(255,214,0,.1);
-  border:1px solid rgba(255,214,0,.22);
-  padding:5px 14px;border-radius:100px;
-  margin-bottom:18px;letter-spacing:.4px;
-  animation:fadeD .5s ease forwards;
-}
+.pre-hl{display:inline-flex;align-self:flex-start;font-family:'Inter',sans-serif;font-size:12px;font-weight:600;color:var(--yellow-accent);background:rgba(255,214,0,.1);border:1px solid rgba(255,214,0,.22);padding:6px 14px;border-radius:100px;margin-bottom:18px;letter-spacing:.3px;animation:fadeD .5s ease forwards}
 @keyframes fadeD{from{opacity:0;transform:translateY(-12px)}to{opacity:1;transform:translateY(0)}}
-
-.hero-h{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:clamp(26px,4.2vw,46px);
-  font-weight:800;line-height:1.14;color:var(--white);
-}
-.hero-h .ln{
-  display:block;
-  text-shadow:0 1px 0 #aaa,0 2px 6px rgba(127,0,255,.25);
-  animation:fadeU .6s ease forwards;opacity:0;
-}
+.hero-h{font-family:'Playfair Display',serif;font-size:clamp(24px,3.4vw,38px);font-weight:700;line-height:1.2;color:var(--white);letter-spacing:-0.02em}
+.hero-h .ln{display:block;animation:fadeU .6s ease forwards;opacity:0}
 .hero-h .ln:nth-child(1){animation-delay:.1s}
-.hero-h .ln:nth-child(2){animation-delay:.3s}
-.hero-h .ln:nth-child(3){
-  animation-delay:.5s;color:var(--yellow-accent);
-  text-shadow:0 1px 0 #d4b200,0 2px 6px rgba(255,214,0,.25);
-}
+.hero-h .ln:nth-child(2){animation-delay:.2s}
+.hero-h .ln:nth-child(3){animation-delay:.3s}
+.hero-h .ln:nth-child(4){animation-delay:.4s}
+.hero-h .ln:nth-child(5){animation-delay:.5s;color:var(--yellow-accent)}
+.hero-h .ln:nth-child(6){animation-delay:.6s;color:var(--light-purple);font-family:'Inter',sans-serif;font-size:.6em;font-weight:500;margin-top:14px;font-style:italic}
 @keyframes fadeU{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-
-.hero-sub{
-  font-size:16px;color:rgba(255,255,255,.72);
-  line-height:1.7;margin:18px 0 0;max-width:460px;
-  animation:fadeU .6s ease .65s forwards;opacity:0;
-}
-
-/* Mobile-only image slot (hidden on desktop) */
+.hero-sub{font-family:'Inter',sans-serif;font-size:15px;color:rgba(255,255,255,.75);line-height:1.65;margin:18px 0 0;max-width:480px;animation:fadeU .6s ease .65s forwards;opacity:0;font-weight:400}
 .hero-img-mobile{display:none}
-
-.hero-meta{
-  display:flex;flex-wrap:wrap;gap:10px 16px;
-  font-size:14px;font-weight:500;color:rgba(255,255,255,.6);
-  margin:20px 0;
-  animation:fadeU .6s ease .8s forwards;opacity:0;
-}
-
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px 16px;font-family:'Inter',sans-serif;font-size:13px;font-weight:500;color:rgba(255,255,255,.6);margin:18px 0;animation:fadeU .6s ease .8s forwards;opacity:0}
 .hero-cta{animation:fadeU .6s ease .95s forwards;opacity:0}
-
-/* --- Hero right (image/video) --- */
 .hero-right{animation:fadeU .7s ease .35s forwards;opacity:0}
-.hero-frame{
-  border-radius:14px;overflow:hidden;position:relative;
-  box-shadow:0 16px 50px rgba(127,0,255,.18);
-  border:2px solid rgba(127,0,255,.2);
-}
-.hero-placeholder{
-  width:100%;aspect-ratio:4/3;
-  background:linear-gradient(135deg,#140028,#2a0055);
-  display:flex;align-items:center;justify-content:center;
-  flex-direction:column;gap:8px;color:rgba(255,255,255,.3);font-size:13px;
-}
-.video-embed{position:relative;padding-bottom:56.25%;height:0;background:#111}
-.video-embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
+.hero-frame{border-radius:14px;overflow:hidden;position:relative;box-shadow:0 16px 50px rgba(127,0,255,.18);border:2px solid rgba(127,0,255,.2);min-height:500px}
+.hero-placeholder{width:100%;height:100%;min-height:500px;background:linear-gradient(135deg,#140028,#2a0055);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;color:rgba(255,255,255,.3);font-size:13px}
 
-.fbadge{
-  position:absolute;bottom:-14px;left:16px;
-  background:var(--white);border-radius:10px;
-  padding:10px 14px;box-shadow:0 6px 24px rgba(0,0,0,.1);
-  display:flex;align-items:center;gap:10px;
-  animation:bounce 3s ease-in-out infinite;
-}
-@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
-.fbadge-ic{
-  width:36px;height:36px;background:var(--primary-purple);
-  border-radius:8px;display:flex;align-items:center;justify-content:center;
-}
-.fbadge-num{font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:800;color:var(--dark-text);line-height:1}
-.fbadge-lbl{font-size:10px;color:var(--muted)}
-
-/* ============================================
-   SECTION 2: IS THIS YOU
-   ============================================ */
-.mirror{padding:60px 0;background:var(--light-grey)}
-.mirror-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.m-card{
-  background:var(--white);border:1px solid var(--soft-grey);
-  border-radius:12px;padding:24px;position:relative;overflow:hidden;
-  transition:all .3s ease;
-}
+/* MIRROR */
+.mirror{padding:56px 0;background:var(--light-grey)}
+.mirror-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:24px}
+.m-card{background:var(--white);border:1px solid var(--soft-grey);border-radius:12px;padding:24px;position:relative;overflow:hidden;transition:all .3s ease}
 .m-card:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(127,0,255,.07);border-color:var(--light-purple)}
-.m-card::before{
-  content:'';position:absolute;top:0;left:0;width:3px;height:100%;
-  background:var(--primary-purple);transform:scaleY(0);transform-origin:top;transition:transform .3s;
-}
+.m-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--primary-purple);transform:scaleY(0);transform-origin:top;transition:transform .3s}
 .m-card:hover::before{transform:scaleY(1)}
-.m-card-ic{
-  width:40px;height:40px;background:var(--purple-bg2);border-radius:10px;
-  display:flex;align-items:center;justify-content:center;margin-bottom:12px;
-}
-.m-card h3{font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:700;color:var(--dark-text);margin-bottom:6px}
-.m-card p{font-size:14px;color:var(--body-text);line-height:1.6}
-.mirror-foot{text-align:center;margin-top:32px}
-.mirror-foot p{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:17px;font-weight:700;color:var(--dark-text);margin-bottom:16px;
-}
+.m-card-ic{width:40px;height:40px;background:var(--purple-bg2);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.m-card h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--dark-text);margin-bottom:8px;letter-spacing:-0.01em}
+.m-card p{font-family:'Inter',sans-serif;font-size:14px;color:var(--body-text);line-height:1.6}
+.m-card p em{color:var(--primary-purple);font-style:italic;font-weight:500}
+.mirror-foot{text-align:center;margin-top:28px}
+.mirror-foot p{font-family:'Playfair Display',serif;font-size:19px;font-weight:600;color:var(--dark-text);margin-bottom:16px;letter-spacing:-0.01em}
 .mirror-foot p span{color:var(--primary-purple)}
 
-/* ============================================
-   SECTION 3: TESTIMONIALS
-   ============================================ */
-.testi{padding:60px 0;background:var(--white)}
-.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+/* TESTIMONIALS */
+.testi{padding:56px 0;background:var(--white)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
 .testi-row2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:66.66%;margin:16px auto 0}
 .t-card{background:var(--light-grey);border-radius:12px;overflow:hidden;transition:all .3s ease}
 .t-card:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(127,0,255,.08)}
@@ -284,231 +109,162 @@ button{font-family:inherit}
 .t-video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
 .t-info{padding:14px 18px}
 .t-stars{color:var(--yellow-accent);font-size:14px;margin-bottom:4px;letter-spacing:1px}
-.t-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:14px;color:var(--dark-text)}
-.t-meta{font-size:11px;color:var(--muted);margin-top:1px}
-.t-result{
-  display:inline-block;margin-top:6px;font-size:11px;font-weight:700;
-  color:var(--primary-purple);background:var(--purple-bg2);
-  padding:3px 10px;border-radius:100px;
-}
-.testi-foot{text-align:center;margin-top:28px}
+.t-name{font-family:'Playfair Display',serif;font-weight:700;font-size:16px;color:var(--dark-text)}
+.t-meta{font-family:'Inter',sans-serif;font-size:11px;color:var(--muted);margin-top:2px;font-weight:500}
+.t-result{display:inline-block;margin-top:6px;font-family:'Inter',sans-serif;font-size:11px;font-weight:700;color:var(--primary-purple);background:var(--purple-bg2);padding:3px 10px;border-radius:100px}
 
-/* ============================================
-   SECTION 4: THE TRUTH
-   ============================================ */
-.truth{padding:60px 0;background:var(--charcoal);position:relative;overflow:hidden}
-.truth::before{
-  content:'';position:absolute;bottom:-80px;right:-80px;
-  width:360px;height:360px;
-  background:radial-gradient(circle,rgba(127,0,255,.1),transparent 70%);pointer-events:none;
-}
+/* TRUTH */
+.truth{padding:56px 0;background:var(--charcoal);position:relative;overflow:hidden}
+.truth::before{content:'';position:absolute;bottom:-80px;right:-80px;width:360px;height:360px;background:radial-gradient(circle,rgba(127,0,255,.1),transparent 70%);pointer-events:none}
 .truth .section-tag{background:rgba(255,214,0,.1);color:var(--yellow-accent)}
 .truth .section-title{color:var(--white)}
-
-.truth-stack{max-width:640px;position:relative;z-index:1}
-.tl{
-  font-size:18px;line-height:1.75;padding:8px 0;
-  color:rgba(255,255,255,.82);
-  border-bottom:1px solid rgba(255,255,255,.05);
-  transition:padding-left .25s ease;
-}
+.truth-lead{font-family:'Playfair Display',serif;font-size:22px;font-weight:600;color:var(--white);margin:12px 0 20px;line-height:1.35;max-width:680px;letter-spacing:-0.01em}
+.truth-lead span{color:var(--yellow-accent);font-style:italic}
+.truth-stack{max-width:680px;position:relative;z-index:1}
+.tl{font-family:'Inter',sans-serif;font-size:17px;line-height:1.7;padding:8px 0;color:rgba(255,255,255,.82);border-bottom:1px solid rgba(255,255,255,.05);transition:padding-left .25s ease;font-weight:400}
 .tl:hover{padding-left:10px}
 .tl:last-child{border-bottom:none}
-.tl .y{color:var(--yellow-accent);font-weight:700}
-.tl em{color:var(--light-purple);font-style:italic}
+.tl .y{color:var(--yellow-accent);font-weight:600}
+.tl em{color:var(--light-purple);font-style:italic;font-weight:500}
+.tl strong{color:var(--white);font-weight:600}
+.truth-box{margin-top:24px;padding:22px;background:rgba(127,0,255,.08);border:1px solid rgba(127,0,255,.18);border-radius:12px;display:flex;align-items:center;gap:14px}
+.truth-box-ic{width:44px;height:44px;min-width:44px;background:var(--primary-purple);border-radius:10px;display:flex;align-items:center;justify-content:center}
+.truth-box-txt{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--white);line-height:1.4;letter-spacing:-0.01em}
+.truth-box-txt span{color:var(--yellow-accent);font-style:italic}
+.truth-foot{margin-top:24px}
 
-.truth-box{
-  margin-top:28px;padding:24px;
-  background:rgba(127,0,255,.08);border:1px solid rgba(127,0,255,.18);
-  border-radius:12px;display:flex;align-items:center;gap:14px;
-}
-.truth-box-ic{
-  width:44px;height:44px;min-width:44px;
-  background:var(--primary-purple);border-radius:10px;
-  display:flex;align-items:center;justify-content:center;
-}
-.truth-box-txt{font-size:17px;font-weight:700;color:var(--white);font-family:'Space Grotesk',sans-serif;line-height:1.4}
-.truth-box-txt span{color:var(--yellow-accent)}
-.truth-foot{margin-top:28px}
-
-/* ============================================
-   SECTION 5: WHAT YOU'LL LEARN
-   ============================================ */
-.learn{padding:60px 0;background:var(--off-white)}
-.learn-list{display:flex;flex-direction:column;gap:14px;max-width:660px}
-.l-item{
-  display:flex;gap:14px;padding:22px;background:var(--white);
-  border-radius:12px;border:1px solid transparent;
-  transition:all .3s ease;
-}
+/* LEARN */
+.learn{padding:56px 0;background:var(--off-white)}
+.learn-list{display:flex;flex-direction:column;gap:12px;max-width:720px;margin-top:20px}
+.l-item{display:flex;gap:16px;padding:22px;background:var(--white);border-radius:12px;border:1px solid transparent;transition:all .3s ease}
 .l-item:hover{border-color:var(--primary-purple);transform:translateX(5px);box-shadow:0 4px 16px rgba(127,0,255,.05)}
-.l-num{
-  font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:800;
-  color:var(--primary-purple);opacity:.2;line-height:1;min-width:36px;
-}
-.l-text h3{font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700;color:var(--dark-text);margin-bottom:3px}
-.l-text p{font-size:14px;color:var(--body-text);line-height:1.6}
-.learn-close{margin-top:24px;font-size:15px;color:var(--body-text);max-width:540px;line-height:1.6;font-weight:500}
-.learn-foot{margin-top:24px}
+.l-num{font-family:'Playfair Display',serif;font-size:32px;font-weight:800;color:var(--primary-purple);opacity:.25;line-height:1;min-width:40px}
+.l-text h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--dark-text);margin-bottom:4px;letter-spacing:-0.01em}
+.l-text p{font-family:'Inter',sans-serif;font-size:14px;color:var(--body-text);line-height:1.6}
+.learn-close{margin-top:22px;font-family:'Playfair Display',serif;font-size:17px;color:var(--body-text);max-width:600px;line-height:1.5;font-weight:500;font-style:italic}
+.learn-foot{margin-top:22px}
 
-/* ============================================
-   SECTION 6: MID CTA
-   ============================================ */
-.cta-band{
-  padding:52px 0;text-align:center;
-  background:linear-gradient(135deg,var(--primary-purple),var(--deep-purple));
-}
+/* CTA BAND */
+.cta-band{padding:48px 0;text-align:center;background:linear-gradient(135deg,var(--primary-purple),var(--deep-purple))}
 .cta-band .section-title{color:var(--white);margin-bottom:6px}
-.cta-band p{color:rgba(255,255,255,.82);font-size:16px;margin-bottom:24px}
+.cta-band p{color:rgba(255,255,255,.85);font-size:16px;margin-bottom:22px;font-family:'Inter',sans-serif;max-width:560px;margin-left:auto;margin-right:auto}
 
-/* ============================================
-   SECTION 7: FOR / NOT FOR
-   ============================================ */
-.filter{padding:60px 0;background:var(--white)}
-.f-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+/* FILTER */
+.filter{padding:56px 0;background:var(--white)}
+.f-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:24px}
 .f-col{background:var(--light-grey);border-radius:12px;padding:26px}
-.f-col h3{
-  font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;
-  margin-bottom:18px;display:flex;align-items:center;gap:8px;
-}
+.f-col h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px;letter-spacing:-0.01em}
 .f-col.yes h3{color:#16a34a}
 .f-col.no h3{color:#dc2626}
 .f-list{list-style:none}
-.f-list li{
-  padding:9px 0;border-bottom:1px solid var(--soft-grey);
-  font-size:14px;color:var(--body-text);
-  display:flex;align-items:flex-start;gap:10px;line-height:1.55;
-}
+.f-list li{padding:10px 0;border-bottom:1px solid var(--soft-grey);font-family:'Inter',sans-serif;font-size:14px;color:var(--body-text);display:flex;align-items:flex-start;gap:10px;line-height:1.55}
 .f-list li:last-child{border-bottom:none}
 .f-ic{font-size:15px;flex-shrink:0;margin-top:2px}
-.filter-foot{text-align:center;margin-top:24px}
+.filter-foot{text-align:center;margin-top:22px}
+.filter-note{margin-top:16px;font-family:'Playfair Display',serif;font-size:15px;color:var(--muted);font-style:italic;text-align:center}
 
-/* ============================================
-   SECTION 8: FAQ
-   ============================================ */
-.faq{padding:60px 0;background:var(--off-white)}
-.faq-list{max-width:660px;display:flex;flex-direction:column;gap:10px}
+/* FAQ */
+.faq{padding:56px 0;background:var(--off-white)}
+.faq-list{max-width:700px;display:flex;flex-direction:column;gap:10px;margin-top:20px}
 .faq-item{border:1px solid var(--soft-grey);border-radius:10px;overflow:hidden;background:var(--white);transition:border-color .25s}
 .faq-item:hover{border-color:var(--primary-purple)}
-.faq-q{
-  width:100%;background:none;border:none;
-  padding:16px 22px;font-family:'Space Grotesk',sans-serif;
-  font-size:15px;font-weight:600;color:var(--dark-text);
-  text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;
-}
-.faq-q .ic{font-size:18px;color:var(--primary-purple);transition:transform .25s;flex-shrink:0}
+.faq-q{width:100%;background:none;border:none;padding:18px 22px;font-family:'Playfair Display',serif;font-size:16px;font-weight:600;color:var(--dark-text);text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;letter-spacing:-0.01em}
+.faq-q .ic{font-size:20px;color:var(--primary-purple);transition:transform .25s;flex-shrink:0}
 .faq-item.open .faq-q .ic{transform:rotate(45deg)}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
-.faq-item.open .faq-a{max-height:220px}
-.faq-a-inner{padding:0 22px 16px;font-size:14px;color:var(--body-text);line-height:1.65}
-.faq-foot{margin-top:24px}
+.faq-item.open .faq-a{max-height:260px}
+.faq-a-inner{padding:0 22px 18px;font-family:'Inter',sans-serif;font-size:14px;color:var(--body-text);line-height:1.65}
 
-/* ============================================
-   SECTION 9: FINAL CTA
-   ============================================ */
-.final{
-  padding:72px 0;text-align:center;position:relative;overflow:hidden;
-  background:linear-gradient(150deg,var(--black),#140028,var(--charcoal));
-}
-.final::before{
-  content:'';position:absolute;top:50%;left:50%;
-  width:440px;height:440px;
-  background:radial-gradient(circle,rgba(127,0,255,.1),transparent 70%);
-  transform:translate(-50%,-50%);pointer-events:none;
-}
-.final-h{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:clamp(22px,3.8vw,38px);font-weight:800;
-  color:var(--white);margin-bottom:10px;line-height:1.2;
-  position:relative;z-index:1;
-}
-.final-h span{color:var(--yellow-accent)}
-.final-sub{font-size:16px;color:rgba(255,255,255,.58);margin-bottom:28px;position:relative;z-index:1}
+/* FINAL */
+.final{padding:64px 0;text-align:center;position:relative;overflow:hidden;background:linear-gradient(150deg,var(--black),#140028,var(--charcoal))}
+.final::before{content:'';position:absolute;top:50%;left:50%;width:440px;height:440px;background:radial-gradient(circle,rgba(127,0,255,.1),transparent 70%);transform:translate(-50%,-50%);pointer-events:none}
+.final-h{font-family:'Playfair Display',serif;font-size:clamp(22px,3.6vw,36px);font-weight:700;color:var(--white);margin-bottom:10px;line-height:1.25;position:relative;z-index:1;max-width:800px;margin-left:auto;margin-right:auto;letter-spacing:-0.02em}
+.final-h span{color:var(--yellow-accent);font-style:italic}
+.final-sub{font-family:'Inter',sans-serif;font-size:15px;color:rgba(255,255,255,.6);margin-bottom:26px;position:relative;z-index:1}
 
-/* ============================================
-   STICKY BAR
-   ============================================ */
-.sticky{
-  position:fixed;bottom:0;left:0;right:0;
-  background:var(--white);border-top:2px solid var(--soft-grey);
-  padding:8px 16px;display:none;
-  align-items:center;justify-content:space-between;
-  z-index:9999;box-shadow:0 -4px 20px rgba(0,0,0,.08);
-}
-.sticky-txt{font-size:12px;color:var(--dark-text);font-weight:700;font-family:'Space Grotesk',sans-serif;line-height:1.3}
-.sticky-txt small{display:block;font-size:10px;color:var(--muted);font-weight:500}
+/* STICKY */
+.sticky{position:fixed;bottom:0;left:0;right:0;background:var(--white);border-top:2px solid var(--soft-grey);padding:8px 16px;display:none;align-items:center;justify-content:space-between;z-index:9999;box-shadow:0 -4px 20px rgba(0,0,0,.08)}
+.sticky-txt{font-family:'Playfair Display',serif;font-size:13px;color:var(--dark-text);font-weight:700;line-height:1.3}
+.sticky-txt small{display:block;font-family:'Inter',sans-serif;font-size:10px;color:var(--muted);font-weight:500}
 .sticky .cta-btn{padding:10px 18px;font-size:13px;animation:none;white-space:nowrap}
 
-/* ============================================
-   RESPONSIVE
-   ============================================ */
+/* RESPONSIVE */
 @media(max-width:900px){
-  .hero-grid{grid-template-columns:1fr;gap:0;text-align:center}
+  .hero{padding:20px 0;min-height:100vh}
+  .hero-grid{grid-template-columns:1fr;gap:0;text-align:center;width:100%}
   .pre-hl{align-self:center}
   .hero-sub{margin-left:auto;margin-right:auto}
-  .hero-img-mobile{display:block;margin:20px auto 0;max-width:380px}
+  .hero-img-mobile{display:block;margin:18px 0;width:100%}
+  .hero-img-mobile .hero-frame{min-height:auto;height:auto;border-radius:12px;aspect-ratio:16/10}
+  .hero-img-mobile .hero-placeholder{min-height:auto;height:100%;aspect-ratio:16/10}
   .hero-right{display:none}
-  .hero-meta{justify-content:center;margin-top:20px}
+  .hero-meta{justify-content:center;margin-top:18px}
   .hero-cta{display:flex;flex-direction:column;align-items:center}
   .hero-cta .cta-group{justify-content:center}
   .mirror-grid{grid-template-columns:1fr}
   .testi-grid{grid-template-columns:1fr}
   .testi-row2{grid-template-columns:1fr;max-width:100%}
   .f-grid{grid-template-columns:1fr}
-  .tl{font-size:16px}
+  .tl{font-size:15px}
+  .truth-lead{font-size:19px}
   .truth-box{flex-direction:column;text-align:center}
   .sticky{display:flex}
   body{padding-bottom:60px}
+  .mirror,.testi,.truth,.learn,.filter,.faq{padding:44px 0}
+  .cta-band{padding:40px 0}
+  .final{padding:52px 0}
 }
 @media(max-width:480px){
-  .hero{padding:36px 0 32px}
-  .hero-h{font-size:22px}
+  .hero{padding:16px 0}
+  .hero-h{font-size:22px;line-height:1.25}
+  .hero-h .ln:nth-child(6){font-size:.68em;margin-top:10px}
   .hero-sub{font-size:14px}
   .cta-btn{width:100%;font-size:14px;padding:13px 18px}
-  .section-title{font-size:20px}
+  .section-title{font-size:22px}
   .m-card{padding:18px}
+  .m-card h3{font-size:17px}
   .tl{font-size:14px}
+  .truth-lead{font-size:17px}
+  .truth-box-txt{font-size:16px}
   .l-item{padding:16px}
+  .l-text h3{font-size:16px}
   .final-h{font-size:20px}
   .hero-img-mobile{max-width:100%}
+  .hero-img-mobile .hero-frame{aspect-ratio:4/3}
+  .hero-img-mobile .hero-placeholder{aspect-ratio:4/3}
+  .container{padding:0 18px}
+  .mirror,.testi,.truth,.learn,.filter,.faq{padding:36px 0}
+  .cta-band{padding:36px 0}
+  .final{padding:44px 0}
+  .faq-q{font-size:15px;padding:16px 18px}
+  .faq-a-inner{padding:0 18px 16px}
 }
-
-@media(prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
-}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 </style>
 </head>
 <body>
 
-<!-- ============================================
-     SECTION 1: HERO
-     ============================================ -->
+<!-- SECTION 1: HERO -->
 <section class="hero" id="top">
   <div class="hero-particles">
     <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
   </div>
   <div class="container">
     <div class="hero-grid">
-
-      <!-- LEFT COLUMN -->
       <div class="hero-left">
-        <!-- ADMIN: Edit pre-headline -->
-        <div class="pre-hl">For boutique owners stuck at the same revenue every month</div>
-
-        <!-- ADMIN: Edit headline lines -->
+        <div class="pre-hl">For tailoring boutique owners who read this and immediately felt something</div>
         <h1 class="hero-h">
-          <span class="ln">You're working harder than ever.</span>
-          <span class="ln">Your boutique isn't growing.</span>
-          <span class="ln">It's not your effort — it's the system.</span>
+          <span class="ln">You're stuck.</span>
+          <span class="ln">Not because you're lazy.</span>
+          <span class="ln">Not because you're unlucky.</span>
+          <span class="ln">Not because your city is small.</span>
+          <span class="ln">Your boutique was built to need you for everything.</span>
+          <span class="ln">In 3 hours, I'll show you how to un-build that.</span>
         </h1>
+        <p class="hero-sub">The exact system tailoring boutique owners are using to hand over measurements, fittings, and deliveries — and still have their name on the door.</p>
 
-        <!-- ADMIN: Edit subheadline -->
-        <p class="hero-sub">Join a 3-hour live session that shows you exactly why you're stuck — and the simple system that lets your boutique run even when you're not there.</p>
-
-        <!-- MOBILE ONLY: Image/video appears here between subheadline and dateline -->
         <div class="hero-img-mobile">
           <div class="hero-frame">
-            <!-- ADMIN: Replace placeholder with <img> or video embed -->
             <div class="hero-placeholder">
               <svg width="36" height="36" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
               <span>Replace with image or video</span>
@@ -516,145 +272,125 @@ button{font-family:inherit}
           </div>
         </div>
 
-        <!-- ADMIN: Edit date/time -->
         <div class="hero-meta">
           <span>📅 January 25, 2025</span>
           <span>⏰ 11:00 AM IST</span>
           <span>💻 Live on Zoom</span>
-          <span>💰 ₹199 only</span>
+          <span>💰 Just ₹199</span>
         </div>
 
         <div class="hero-cta">
           <div class="cta-group">
-            <a href="#register" class="cta-btn cta-btn--yellow">Reserve My Seat — ₹199 <span class="arrow">→</span></a>
+            <a href="#register" class="cta-btn cta-btn--yellow">Yes, Free Me From This — ₹199 <span class="arrow">→</span></a>
           </div>
-          <!-- ADMIN: Change number to real count -->
-          <p class="cta-note cta-note--light"><b>243</b> boutique owners already registered</p>
+          <p class="cta-note cta-note--light"><b>243</b> tailoring boutique owners registered · Live seats filling fast</p>
         </div>
       </div>
 
-      <!-- RIGHT COLUMN (Desktop only) -->
       <div class="hero-right">
         <div class="hero-frame">
-          <!-- ADMIN: Replace with real image or video:
-               <img src="photo.jpg" alt="Boutique owner" style="width:100%;display:block;">
-               OR use the video embed div below -->
           <div class="hero-placeholder">
             <svg width="36" height="36" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
             <span>Replace with image or video</span>
           </div>
-          <div class="fbadge">
-            <div class="fbadge-ic"><svg width="18" height="18" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
-            <div>
-              <div class="fbadge-num">90 Days</div>
-              <div class="fbadge-lbl">to full transformation</div>
-            </div>
-          </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ============================================
-     SECTION 2: IS THIS YOU + CTA
-     ============================================ -->
+<!-- SECTION 2: MIRROR -->
 <section class="mirror">
   <div class="container">
-    <div class="section-tag rv">Self-check</div>
-    <h2 class="section-title rv">Which one are you?</h2>
-    <p class="section-sub rv">Be honest. Pick the one that hits closest to home.</p>
+    <div class="section-tag rv">The Mirror</div>
+    <h2 class="section-title rv">Four owners walk into a boutique. Which one are you?</h2>
 
     <div class="mirror-grid">
       <div class="m-card rv-l">
-        <div class="m-card-ic"><svg width="20" height="20" fill="none" stroke="var(--primary-purple)" stroke-width="2" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
-        <h3>The Firefighter</h3>
-        <p>You start the day with a plan. By 10 AM, you're solving someone else's problem. Stock issue. Staff issue. Customer complaint. Your whole day is putting out fires that shouldn't need you.</p>
+        <div class="m-card-ic"><svg width="20" height="20" fill="none" stroke="var(--primary-purple)" stroke-width="2" viewBox="0 0 24 24"><path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m3 0v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/></svg></div>
+        <h3>The Human Measuring Tape</h3>
+        <p>"Madam is coming at 4. She only wants madam to measure." You've heard this line 200 times. Your entire calendar is measurement slots. Design work? Sourcing? Growth? <em>That's what 11 PM is for.</em></p>
       </div>
       <div class="m-card rv-r">
-        <div class="m-card-ic"><svg width="20" height="20" fill="none" stroke="var(--primary-purple)" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-        <h3>The Bottleneck</h3>
-        <p>Nothing moves without your "yes." Pricing? You decide. Design approval? You decide. Vendor call? You again. You wanted to be the owner. Instead, you became the busiest employee.</p>
+        <div class="m-card-ic"><svg width="20" height="20" fill="none" stroke="var(--primary-purple)" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg></div>
+        <h3>The Approval Machine</h3>
+        <p>"Madam, check once." Fall length — check once. Sleeve — check once. Kaanji — check once. You're not running a boutique. <em>You're a walking quality-control department wearing a saree.</em></p>
       </div>
       <div class="m-card rv-l">
-        <div class="m-card-ic"><svg width="20" height="20" fill="none" stroke="var(--primary-purple)" stroke-width="2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <h3>The Dependent</h3>
-        <p>One tailor. One manager. One family member. If that one person leaves tomorrow — your business stops. You know this. It keeps you up at night.</p>
+        <div class="m-card-ic"><svg width="20" height="20" fill="none" stroke="var(--primary-purple)" stroke-width="2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+        <h3>The One-Tailor Empire</h3>
+        <p>Your master tailor is your best-kept secret and your biggest fear. If he takes leave, orders stop. If he quits, the boutique shakes. <em>And he knows it. You know he knows it.</em></p>
       </div>
       <div class="m-card rv-r">
-        <div class="m-card-ic"><svg width="20" height="20" fill="none" stroke="var(--primary-purple)" stroke-width="2" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
-        <h3>The Plateaued Grower</h3>
-        <p>You're working harder than last year. But your revenue is the same as last year. More effort. Same result. Something is broken — and it's not your work ethic.</p>
+        <div class="m-card-ic"><svg width="20" height="20" fill="none" stroke="var(--primary-purple)" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg></div>
+        <h3>The Wedding Season Survivor</h3>
+        <p>October to February is not a season — it's a war. You promise. You over-promise. You deliver at midnight. <em>You cry in the car.</em> Then Ugadi comes, and you do it all again.</p>
       </div>
     </div>
 
     <div class="mirror-foot rv">
-      <p>If even one of these felt personal — <span>this session was made for you.</span></p>
+      <p>If one of these hit too close — <span>this session was built for exactly you.</span></p>
       <a href="#register" class="cta-btn cta-btn--purple">Yes, This Is Me — Save My Seat <span class="arrow">→</span></a>
     </div>
   </div>
 </section>
 
-<!-- ============================================
-     SECTION 3: TESTIMONIALS + CTA
-     ============================================ -->
+<!-- SECTION 3: TESTIMONIALS -->
 <section class="testi">
   <div class="container">
     <div class="section-tag rv">Real results</div>
-    <h2 class="section-title rv">Real boutique owners. Real changes.</h2>
-    <p class="section-sub rv">They were stuck too. Here's what shifted.</p>
+    <h2 class="section-title rv">Real tailoring boutique owners. Real changes.</h2>
+    <p class="section-sub rv">They were stuck in the same loop. Here's what shifted.</p>
 
-    <!-- ADMIN: Replace VIDEO_ID_1 through VIDEO_ID_5 with real YouTube IDs -->
     <div class="testi-grid">
       <div class="t-card rv">
         <div class="t-video"><iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Testimonial 1" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
-        <div class="t-info"><div class="t-stars">★★★★★</div><div class="t-name">[Priya S.]</div><div class="t-meta">[Chennai] · [Bridal Boutique]</div><span class="t-result">Stopped working Sundays in 30 days</span></div>
+        <div class="t-info"><div class="t-stars">★★★★★</div><div class="t-name">[Priya S.]</div><div class="t-meta">[Chennai] · [Bridal Blouse Specialist]</div><span class="t-result">Assistant does 80% of measurements now</span></div>
       </div>
       <div class="t-card rv">
         <div class="t-video"><iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="Testimonial 2" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
-        <div class="t-info"><div class="t-stars">★★★★★</div><div class="t-name">[Rekha M.]</div><div class="t-meta">[Coimbatore] · [Designer Boutique]</div><span class="t-result">₹1.2L → ₹2.8L in 3 months</span></div>
+        <div class="t-info"><div class="t-stars">★★★★★</div><div class="t-name">[Rekha M.]</div><div class="t-meta">[Coimbatore] · [Bridal Boutique]</div><span class="t-result">₹1.2L → ₹2.8L in 3 months</span></div>
       </div>
       <div class="t-card rv">
         <div class="t-video"><iframe src="https://www.youtube.com/embed/VIDEO_ID_3" title="Testimonial 3" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
-        <div class="t-info"><div class="t-stars">★★★★★</div><div class="t-name">[Deepa K.]</div><div class="t-meta">[Bangalore] · [Ready-to-Wear]</div><span class="t-result">10-day vacation, zero calls</span></div>
+        <div class="t-info"><div class="t-stars">★★★★★</div><div class="t-name">[Deepa K.]</div><div class="t-meta">[Bangalore] · [Custom Tailoring]</div><span class="t-result">5-day vacation during peak season</span></div>
       </div>
     </div>
     <div class="testi-row2">
       <div class="t-card rv">
         <div class="t-video"><iframe src="https://www.youtube.com/embed/VIDEO_ID_4" title="Testimonial 4" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
-        <div class="t-info"><div class="t-stars">★★★★★</div><div class="t-name">[Meena R.]</div><div class="t-meta">[Hyderabad] · [Custom Tailoring]</div><span class="t-result">Delegated vendor calls in 45 days</span></div>
+        <div class="t-info"><div class="t-stars">★★★★★</div><div class="t-name">[Meena R.]</div><div class="t-meta">[Hyderabad] · [Churidar Specialist]</div><span class="t-result">Master tailor quit — zero missed deliveries</span></div>
       </div>
       <div class="t-card rv">
         <div class="t-video"><iframe src="https://www.youtube.com/embed/VIDEO_ID_5" title="Testimonial 5" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
-        <div class="t-info"><div class="t-stars">★★★★★</div><div class="t-name">[Anitha V.]</div><div class="t-meta">[Mumbai] · [Casual Wear]</div><span class="t-result">Opened 2nd branch without burnout</span></div>
+        <div class="t-info"><div class="t-stars">★★★★★</div><div class="t-name">[Anitha V.]</div><div class="t-meta">[Mumbai] · [Designer Boutique]</div><span class="t-result">Stopped working Sundays in 30 days</span></div>
       </div>
     </div>
-  
   </div>
 </section>
 
-<!-- ============================================
-     SECTION 4: THE TRUTH + CTA
-     ============================================ -->
+<!-- SECTION 4: TRUTH -->
 <section class="truth">
   <div class="container">
-    <div class="section-tag rv">The truth</div>
-    <h2 class="section-title rv">Here's what nobody tells boutique owners</h2>
+    <div class="section-tag rv">The Unsaid</div>
+    <h2 class="section-title rv">Before you read another growth tip, read this one sentence:</h2>
+
+    <p class="truth-lead rv">Your boutique isn't small because you're not talented. Your boutique is small because it fits inside <span>one person — and that person is you.</span></p>
 
     <div class="truth-stack">
-      <div class="tl rv">You don't have a marketing problem.</div>
-      <div class="tl rv">You don't have a customer problem.</div>
-      <div class="tl rv">You have a <span class="y">"you" problem.</span></div>
-      <div class="tl rv">Not because you're doing something wrong. Because you're doing <em>everything</em>.</div>
-      <div class="tl rv">Every order. Every decision. Every small fire. It all runs through you.</div>
-      <div class="tl rv">So your business can't grow past what <em>you</em> can personally handle in a day.</div>
-      <div class="tl rv">More ads won't fix this. More staff won't fix this. Even more customers won't fix this — they'll just make you more tired.</div>
+      <div class="tl rv">Every measurement — <strong>you</strong> take it.</div>
+      <div class="tl rv">Every fitting — <strong>you</strong> approve it.</div>
+      <div class="tl rv">Every difficult customer — <strong>you</strong> handle it.</div>
+      <div class="tl rv">Every tailor mistake — <strong>you</strong> fix it.</div>
+      <div class="tl rv">Every delivery deadline — <strong>you</strong> personally push it.</div>
+      <div class="tl rv">So your boutique's ceiling isn't your marketing. It isn't your fabric. It isn't your city.</div>
+      <div class="tl rv"><span class="y">Your boutique's ceiling is the number of hours you can stay awake.</span></div>
+      <div class="tl rv">That's why more customers make you <em>more tired</em>, not more rich. That's why hiring more tailors just gives you more people to babysit.</div>
     </div>
 
     <div class="truth-box rv">
       <div class="truth-box-ic"><svg width="22" height="22" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></div>
-      <div class="truth-box-txt">What fixes this is <span>a system.</span> One that works when you're not watching. That's what this session is about.</div>
+      <div class="truth-box-txt">You don't need more of anything. You need <span>a system that runs without you standing over it.</span></div>
     </div>
 
     <div class="truth-foot rv">
@@ -664,84 +400,79 @@ button{font-family:inherit}
   </div>
 </section>
 
-<!-- ============================================
-     SECTION 5: WHAT YOU'LL LEARN + CTA
-     ============================================ -->
+<!-- SECTION 5: LEARN -->
 <section class="learn">
   <div class="container">
-    <div class="section-tag rv">The session</div>
-    <h2 class="section-title rv">In 3 hours, you'll know:</h2>
+    <div class="section-tag rv">The Session</div>
+    <h2 class="section-title rv">3 hours. No fluff. Here's what you'll know:</h2>
 
     <div class="learn-list">
       <div class="l-item rv">
         <div class="l-num">01</div>
         <div class="l-text">
-          <h3>Why "working harder" keeps you stuck</h3>
-          <p>The exact reason more effort gives you the same revenue — and the one shift that changes everything.</p>
+          <h3>The Real Reason You Can't Delegate Measurements</h3>
+          <p>It's not that your staff is bad. It's not that customers demand you. It's a specific trust-gap most owners can't name. Once you see it, you can fix it in under 30 days.</p>
         </div>
       </div>
       <div class="l-item rv">
         <div class="l-num">02</div>
         <div class="l-text">
-          <h3>The 3 hidden leaks eating your growth</h3>
-          <p>Most boutique owners can't see them. Once someone points them out, you can't unsee them. We'll find yours live.</p>
+          <h3>The 3 Silent Leaks Bleeding Your Margins</h3>
+          <p>Alterations. Last-minute overtime to compete. Completed orders forgotten in delivery. Every tailoring boutique loses 18–25% margin here — and doesn't even know it. You'll walk out with a way to plug all three.</p>
         </div>
       </div>
       <div class="l-item rv">
         <div class="l-num">03</div>
         <div class="l-text">
-          <h3>The framework that crossed ₹3L, ₹5L, ₹10L</h3>
-          <p>Used by boutique owners who scaled — without working more hours than they already were.</p>
+          <h3>The "Owner-Out" Framework</h3>
+          <p>The exact 4-step framework tailoring boutique owners are using to cross ₹3L, ₹5L, ₹10L per month — without becoming a bigger version of the tired owner they already are.</p>
         </div>
       </div>
     </div>
-    <p class="learn-close rv">This isn't theory. This isn't motivation. This is the exact operating system fix your boutique needs right now.</p>
+    <p class="learn-close rv">This isn't a webinar. This isn't a pep talk. This is a live surgery on how your boutique currently runs — and how to rebuild it so it runs without you.</p>
     <div class="learn-foot rv">
       <a href="#register" class="cta-btn cta-btn--purple">Get The Framework — ₹199 <span class="arrow">→</span></a>
     </div>
   </div>
 </section>
 
-<!-- ============================================
-     SECTION 6: MID CTA BAND
-     ============================================ -->
+<!-- SECTION 6: MID CTA BAND -->
 <section class="cta-band" id="register">
   <div class="container">
-    <h2 class="section-title rv">You already know something needs to change.</h2>
-    <p class="rv">3 hours. ₹199. One decision that changes how your business runs.</p>
-    <a href="#register" class="cta-btn cta-btn--yellow rv">Yes, Save My Spot — ₹199 <span class="arrow">→</span></a>
+    <h2 class="section-title rv">You've read this far because something inside is nodding.</h2>
+    <p class="rv">Don't close this tab and go back to the same 14-hour day.</p>
+    <a href="#register" class="cta-btn cta-btn--yellow rv">Yes, Save My Seat — ₹199 <span class="arrow">→</span></a>
   </div>
 </section>
 
-<!-- ============================================
-     SECTION 7: FOR / NOT FOR + CTA
-     ============================================ -->
+<!-- SECTION 7: FILTER -->
 <section class="filter">
   <div class="container">
     <div class="section-tag rv">Before you register</div>
     <h2 class="section-title rv">Read this honestly</h2>
-    <p class="section-sub rv">We filter because we care about results — not headcount.</p>
 
     <div class="f-grid">
       <div class="f-col yes rv-l">
         <h3>✓ This IS for you if</h3>
         <ul class="f-list">
-          <li><span class="f-ic">✅</span>You're already doing ₹1 Lakh or more per month</li>
-          <li><span class="f-ic">✅</span>You feel trapped inside your own business</li>
-          <li><span class="f-ic">✅</span>You want a system, not just another tip or trick</li>
-          <li><span class="f-ic">✅</span>You're ready to stop being the bottleneck</li>
+          <li><span class="f-ic">✅</span>You're already doing ₹1 Lakh+ per month in tailoring orders</li>
+          <li><span class="f-ic">✅</span>You personally take most measurements or approve most fittings</li>
+          <li><span class="f-ic">✅</span>You've thought "I can't keep doing this" at least 3 times this month</li>
+          <li><span class="f-ic">✅</span>You want a real system, not another Instagram reel formula</li>
         </ul>
       </div>
       <div class="f-col no rv-r">
         <h3>✗ This is NOT for you if</h3>
         <ul class="f-list">
-          <li><span class="f-ic">❌</span>You haven't started yet or have zero revenue</li>
-          <li><span class="f-ic">❌</span>You're looking for a quick Instagram follower hack</li>
-          <li><span class="f-ic">❌</span>You want someone to do the work for you</li>
-          <li><span class="f-ic">❌</span>You're happy running everything yourself forever</li>
+          <li><span class="f-ic">❌</span>You haven't opened your boutique yet</li>
+          <li><span class="f-ic">❌</span>You want a "1000 followers in 7 days" hack</li>
+          <li><span class="f-ic">❌</span>You want me to run your boutique for you</li>
+          <li><span class="f-ic">❌</span>You genuinely enjoy working till 11 PM every night forever</li>
         </ul>
       </div>
     </div>
+
+    <p class="filter-note rv">I filter hard because I care about your result, not my registration count.</p>
 
     <div class="filter-foot rv">
       <a href="#register" class="cta-btn cta-btn--purple">I Qualify — Reserve My Seat <span class="arrow">→</span></a>
@@ -749,69 +480,54 @@ button{font-family:inherit}
   </div>
 </section>
 
-<!-- ============================================
-     SECTION 8: FAQ + CTA
-     ============================================ -->
+<!-- SECTION 8: FAQ -->
 <section class="faq">
   <div class="container">
-    <div class="section-tag rv">Got questions?</div>
+    <div class="section-tag rv">The real objections</div>
     <h2 class="section-title rv">Still thinking? Let's clear it up.</h2>
 
     <div class="faq-list">
       <div class="faq-item rv">
-        <button class="faq-q" aria-expanded="false">"I don't have 3 hours." <span class="ic">+</span></button>
-        <div class="faq-a"><div class="faq-a-inner">That's exactly why you need this. You don't have 3 hours because your business takes all your time. This session shows you how to get that time back — permanently. Three hours now saves you three years of staying stuck.</div></div>
+        <button class="faq-q" aria-expanded="false">"3 hours? I don't even have 30 minutes." <span class="ic">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">That's the entire problem this session solves. You don't have time because your boutique eats it. Three hours now buys back three years. If you can't spare 3 hours, you especially need this.</div></div>
       </div>
       <div class="faq-item rv">
-        <button class="faq-q" aria-expanded="false">"I've tried software before. It didn't work." <span class="ic">+</span></button>
-        <div class="faq-a"><div class="faq-a-inner">Software alone never works. That's the whole point. This isn't a software demo. This is about fixing the system underneath — so that when you do use a tool, it actually sticks.</div></div>
+        <button class="faq-q" aria-expanded="false">"I bought billing software last year. It's collecting dust." <span class="ic">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Because software can't fix a boutique where the owner is still the CPU. This session isn't about software — it's about the human layer underneath. Fix that first, and any tool sticks. Skip that, and no app on earth will save you.</div></div>
       </div>
       <div class="faq-item rv">
-        <button class="faq-q" aria-expanded="false">"Will this work for my kind of boutique?" <span class="ic">+</span></button>
-        <div class="faq-a"><div class="faq-a-inner">Custom orders, ready-to-wear, bridal, casual — the stuck pattern is the same. The owner does everything. The fix is the same system, adjusted to your workflow.</div></div>
+        <button class="faq-q" aria-expanded="false">"My tailoring is different — I only do bridal blouses / churidars / men's suits." <span class="ic">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">The garment changes. The pattern doesn't. Owner takes measurement. Owner checks fitting. Owner chases tailor. Owner delivers. That's every tailoring boutique in India — bridal or blouse or suit. Same disease, same medicine.</div></div>
       </div>
       <div class="faq-item rv">
-        <button class="faq-q" aria-expanded="false">"₹199 seems too cheap. What's the catch?" <span class="ic">+</span></button>
-        <div class="faq-a"><div class="faq-a-inner">No catch. The session is priced low so price isn't the reason you say no. We make our money from the people who choose to go deeper after the session. No pressure, no hard sell.</div></div>
+        <button class="faq-q" aria-expanded="false">"Why only ₹199? What am I not being told?" <span class="ic">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Because I'd rather you show up and get value than sit on the fence over price. At the end of the session, I'll mention a deeper program for owners who want hands-on help. If it's for you — great. If not — you still walk out with a working framework. No trap.</div></div>
       </div>
     </div>
-
-  
   </div>
 </section>
 
-<!-- ============================================
-     SECTION 9: FINAL CTA
-     ============================================ -->
+<!-- SECTION 9: FINAL -->
 <section class="final">
   <div class="container">
-    <h2 class="final-h rv">90 days from now, your boutique either <span>still depends on you</span> — or it doesn't.</h2>
-    <p class="final-sub rv">This is where that change starts. 3 hours. ₹199. One decision.</p>
+    <h2 class="final-h rv">This time next year, one of two things is true. Either you're <span>still personally checking every fitting</span> — or you're not.</h2>
+    <p class="final-sub rv">3 hours. ₹199. The decision costs less than a fabric sample.</p>
     <div class="rv">
       <a href="#register" class="cta-btn cta-btn--yellow">I'm In — Reserve My Seat <span class="arrow">→</span></a>
     </div>
   </div>
 </section>
 
-<!-- ============================================
-     STICKY MOBILE BAR
-     ============================================ -->
+<!-- STICKY BAR -->
 <div class="sticky" id="stickyBar">
-  <div class="sticky-txt">Live Masterclass · ₹199<small>Limited seats available</small></div>
+  <div class="sticky-txt">Live Masterclass · ₹199<small>Limited seats · Filling fast</small></div>
   <a href="#register" class="cta-btn cta-btn--purple">Register →</a>
 </div>
 
-<!-- ============================================
-     JAVASCRIPT
-     ============================================ -->
 <script>
-// Scroll reveal
-const obs=new IntersectionObserver(e=>{
-  e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('v')});
-},{threshold:.1,rootMargin:'0px 0px -20px 0px'});
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('v')});},{threshold:.1,rootMargin:'0px 0px -20px 0px'});
 document.querySelectorAll('.rv,.rv-l,.rv-r').forEach(el=>obs.observe(el));
 
-// FAQ accordion
 document.querySelectorAll('.faq-q').forEach(b=>{
   b.addEventListener('click',()=>{
     const i=b.closest('.faq-item'),o=i.classList.contains('open');
@@ -820,7 +536,6 @@ document.querySelectorAll('.faq-q').forEach(b=>{
   });
 });
 
-// Sticky bar
 const bar=document.getElementById('stickyBar');
 const hH=document.getElementById('top').offsetHeight;
 let ticking=false;
