@@ -949,9 +949,14 @@ ul,ol{list-style:none}
   .flt--5{width:28px;height:28px;left:8%;bottom:7%;opacity:.09}
   .flt--6{width:22px;height:22px;left:auto;right:8%;bottom:8%}
 
-  .btn{width:100%;max-width:400px;padding:0 20px}
-  .btn--sm{width:auto}
+   .btn{width:100%;max-width:400px;padding:0 20px}
+  .btn--sm,.btn--sticky{width:auto;max-width:none}
 
+
+    .sticky__meta{flex:1 1 auto;min-width:0}
+  .sticky__k,.sticky__v{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+  
   /* sections */
   .sec__head{margin-bottom:30px}
   .cards{grid-template-columns:1fr}
